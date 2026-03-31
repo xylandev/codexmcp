@@ -18,7 +18,7 @@ from mcp.server.fastmcp import FastMCP
 from pydantic import Field
 import shutil
 
-mcp = FastMCP("Codex MCP Server-from guda.studio")
+mcp = FastMCP("Codex MCP Server-from xylandev")
 
 # Transient reconnect notices (ASCII "..." or Unicode "…") should not flip success alone.
 _RECONNECTING = re.compile(r"^Reconnecting\.(?:\.\.\.|…)\s+\d+/\d+")
@@ -293,7 +293,7 @@ def windows_escape(prompt):
         - Ensure `cd` exists and is accessible; invalid paths may yield failures or empty session output.
         - Set `return_all_messages` to `True` when you need full JSON traces (reasoning, tool calls, etc.).
     """,
-    meta={"version": "0.0.0", "author": "guda.studio"},
+    meta={"version": "0.0.0", "author": "xylande'v"},
 )
 async def codex(
     PROMPT: Annotated[str, "Instruction for the task to send to codex."],
